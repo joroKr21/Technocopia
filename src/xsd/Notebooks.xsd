@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XMLSchema for notebooks -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:cat="http://technocopia.byethost31.com/Catalogue"
+        targetNamespace="http://technocopia.byethost31.com/Catalogue"
+        elementFormDefault="qualified"
+        version="1.0">
+    <include schemaLocation="Computers.xsd"/>
+    <include schemaLocation="Manufacturers.xsd"/>
+    <annotation>
+        <documentation>Notebooks catalogue</documentation>
+    </annotation>
+    <complexType name="Notebook">
+        <complexContent>
+            <extension base="cat:Computer">
+                <sequence>
+                    <element name="resolution" type="cat:Resolution"/>
+                    <element name="display" type="cat:DisplaySize"/>
+                    <element name="weight" type="cat:decimal.3"/>
+                    <element name="battery">
+                        <complexType>
+                            <complexContent>
+                                <extension base="string">
+                                    <attribute name="duration" type="cat:decimal.2"/>
+                                </extension>
+                            </complexContent>
+                        </complexType>
+                    </element>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="NotebookList">
+        <sequence>
+            <element name="notebook" type="cat:Notebook" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    <element name="notebookCatalogue">
+        <complexType>
+            <sequence>
+                <element name="manufacturerList" type="cat:ManufacturerList"/>
+                <element name="notebookList" type="cat:NotebookList"/>
+            </sequence>
+        </complexType>
+        <key name="manufacturerID">
+            <selector xpath="manufacturerList/manufacturer"/>
+            <field xpath="@id"/>
+        </key>
+        <keyref name="manufacturerRef" refer="cat:manufacturerID">
+            <selector xpath="notebookList/notebook"/>
+            <field xpath="manufacturer"/>
+        </keyref>
+    </element>
+</schema>

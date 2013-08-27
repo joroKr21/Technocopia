@@ -1,0 +1,181 @@
+/* --------------------COLOR TABLE--------------------------- */
+
+/* ivory: #FFFFF0 */
+/* gray13: #212121 */
+/* gray50: #7F7F7F */
+/* cyan2: #00EEEE */
+/* darkcyan: #008B8B */
+/* linen: #FAF0E6 */
+/* hotpink: #FF69B4 */
+/* hotpink4: #8B3A62 */
+
+/* -------------------ELEMENTS STYLING---------------------------- */
+
+@font-face {
+    font-family: Pulse;
+    src: url("../fonts/pulse-sans.eot"); /* for IE */
+    src: local("pulse"), url("../fonts/pulse-sans.ttf") format("truetype"); /* for non-IE */
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("../fonts/ubuntu.eot"); /* for IE */
+    src: local("ubuntu"), url("../fonts/ubuntu.ttf") format("truetype"); /* for non-IE */
+}
+
+body {
+    background-image: url("../img/strange-bullseyes.png");
+    color: #212121;
+    text-align: center;
+    font-family: Ubuntu;
+    margin: 0;
+}
+
+#menu {
+    background-image: url("../img/binding-dark.png");
+    position: fixed;
+    top: 0;
+    padding: 20px 0 10px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #7F7F7F;
+    box-shadow: 0 0 15px #7F7F7F;
+    z-index: 2;
+}
+
+#menu a {
+    color: #00EEEE;
+    margin: 0 25px;
+    font-size: 1.5em;
+    transition: color 1s;
+}
+
+#menu a:hover {
+    color: #FF69B4;
+}
+
+#big-wrap {
+    background-image: url("../img/binding-light.png");
+    margin: auto;
+    margin-top: 30px;
+    padding: 50px;
+    width: 900px;
+    text-align: left;
+    border-left: 1px solid #7F7F7F;
+    border-right: 1px solid #7F7F7F;
+    border-bottom: 1px solid #7F7F7F;
+    box-shadow: 0 0 15px #7F7F7F;
+}
+
+#logo {
+    font-family: Pulse;
+    font-size: 3em;
+    text-transform: lowercase;
+    color: #008B8B;
+    transition: color 2s;
+    text-shadow: 0 0 5px #008B8B;
+}
+
+#logo:hover {
+    color: #8B3A62;
+}
+
+#motto {
+    float: right;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+header {
+    margin: 10px;
+    padding: 5px;
+}
+
+section {
+    text-align: left;
+}
+
+#products {
+    display: inline-block;
+    width: 75%;
+    vertical-align: top
+}
+
+#products article {
+    padding: 15px;
+    background-color: #FFFFF0;
+    border: 1px solid #7F7F7F;
+}
+
+#products article:hover {
+    box-shadow: inset 0 0 15px #7F7F7F;
+}
+
+#products article>div {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+div.pic {
+    width: 32%;
+}
+
+div.description {
+    width: 64%;
+}
+
+
+.pic img {
+    width: 200px;
+    height: 200px;
+}
+
+#manufacturers img {
+    width: 100%;
+}
+
+.description span, .description p, .pic span {
+    font-size: 0.8em;
+}
+
+.price {
+    text-align: right;
+}
+
+em {
+    font-style: normal;
+    color: #8B3A62;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    margin: 50px 0;
+    text-align: center;
+    font-style: italic;
+}
+
+footer a {
+    color: #008B8B;
+    transition: color 1s;
+}
+
+footer a:hover {
+    color: #8B3A62;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XMLSchema for manufacturers -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:cat="http://technocopia.byethost31.com/Catalogue"
+        targetNamespace="http://technocopia.byethost31.com/Catalogue"
+        elementFormDefault="qualified"
+        version="1.0">
+    <include schemaLocation="BaseTypes.xsd"/>
+    <import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+    <annotation>
+        <documentation>Manufacturers info</documentation>
+    </annotation>
+    <complexType name="Manufacturer">
+        <sequence>
+            <element name="name" type="string"/>
+            <element name="website">
+                <complexType>
+                    <attribute name="href" type="cat:httpURL"/>
+                </complexType>
+            </element>
+            <element name="logo">
+                <complexType>
+                    <attribute name="src" type="anyURI"/>
+                </complexType>
+            </element>
+        </sequence>
+        <attribute name="id" type="ID" use="required"/>
+    </complexType>
+    <complexType name="ManufacturerList">
+        <sequence>
+            <element name="manufacturer" type="cat:Manufacturer" maxOccurs="unbounded"/>
+        </sequence>
+        <attribute ref="xml:base"/>
+    </complexType>
+    <element name="manufacturerList" type="cat:ManufacturerList"/>
+</schema>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/Cameras.xsl"?>
+<!-- Cameras -->
+<cameraCatalogue xmlns="http://technocopia.byethost31.com/Catalogue"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://technocopia.byethost31.com/Catalogue ../xsd/Cameras.xsd">
+    <!-- Not supported by browsers
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                href="Manufacturers.xml"
+                parse="xml"/>
+    -->
+    <manufacturerList>
+        <manufacturer id="canon">
+            <name>Canon</name>
+            <website href="http://www.canon.com/"/>
+            <logo src="../logos/canon.png"/>
+        </manufacturer>
+        <manufacturer id="fujifilm">
+            <name>Fujifilm</name>
+            <website href="http://www.fujifilm.com/"/>
+            <logo src="../logos/fujifilm.png"/>
+        </manufacturer>
+        <manufacturer id="nikon">
+            <name>Nikon</name>
+            <website href="http://www.nikon.com/"/>
+            <logo src="../logos/nikon.png"/>
+        </manufacturer>
+        <manufacturer id="olympus">
+            <name>Olympus</name>
+            <website href="http://www.olympus.com/"/>
+            <logo src="../logos/olympus.png"/>
+        </manufacturer>
+        <manufacturer id="panasonic">
+            <name>Panasonic</name>
+            <website href="http://www.panasonic.com/"/>
+            <logo src="../logos/panasonic.png"/>
+        </manufacturer>
+    </manufacturerList>
+    <cameraList>
+        <camera barcode="394198">
+            <img src="../pic/E16F7019F12611F1986718A9056218BC.jpg"/>
+            <model>CANON POWERSHOT G1X</model>
+            <manufacturer>canon</manufacturer>
+            <price currency="BGN">1424.05</price>
+            <warranty>12</warranty>
+            <resolution>14</resolution>
+            <opticalZoom>4</opticalZoom>
+            <digitalZoom>4</digitalZoom>
+            <display>3</display>
+            <battery>Li-Ion</battery>
+            <color>black</color>
+        </camera>
+        <camera barcode="390314">
+            <img src="../pic/22716E3BB7101EE2AF93F95F27B79D96.jpg"/>
+            <model>FUJI FINEPIX HS50EXR BLACK EЕ</model>
+            <manufacturer>fujifilm</manufacturer>
+            <price currency="BGN">920.55</price>
+            <warranty>24</warranty>
+            <resolution>16</resolution>
+            <opticalZoom>42</opticalZoom>
+            <digitalZoom>2</digitalZoom>
+            <display>3</display>
+            <battery>Li-Ion NP-W126</battery>
+            <color>black</color>
+        </camera>
+        <camera barcode="394922">
+            <img src="../pic/E10176A9A0CFEDF1986718A9056218BC.jpg"/>
+            <model>PANASONIC DMC-FZ150EPK</model>
+            <manufacturer>panasonic</manufacturer>
+            <price currency="BGN">759.05</price>
+            <warranty>24</warranty>
+            <resolution>12</resolution>
+            <opticalZoom>24</opticalZoom>
+            <digitalZoom>4</digitalZoom>
+            <display>3</display>
+            <battery>Li-Ion</battery>
+            <color>black</color>
+        </camera>
+        <camera barcode="395212">
+            <img src="../pic/F2CAFD7597821EE2B5EB490EB1239549.jpg"/>
+            <model>NIKON COOLPIX P520 BLK</model>
+            <manufacturer>nikon</manufacturer>
+            <price currency="BGN">702.05</price>
+            <warranty>24</warranty>
+            <resolution>18.1</resolution>
+            <opticalZoom>42</opticalZoom>
+            <digitalZoom>2</digitalZoom>
+            <display>3.2</display>
+            <battery>Li-Ion</battery>
+            <color>black</color>
+        </camera>
+        <camera barcode="397469">
+            <img src="../pic/F2CAFD7597821EE2B28BA699464AB548.jpg"/>
+            <model>OLYMPUS TG-2 RED</model>
+            <manufacturer>olympus</manufacturer>
+            <price currency="BGN">729.00</price>
+            <warranty>24</warranty>
+            <resolution>12.7</resolution>
+            <opticalZoom>4</opticalZoom>
+            <digitalZoom>4</digitalZoom>
+            <display>3</display>
+            <battery>Li-Ion LI-90B</battery>
+            <color>red</color>
+        </camera>
+    </cameraList>
+</cameraCatalogue>

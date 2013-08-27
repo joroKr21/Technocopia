@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/Tablets.xsl"?>
+<!-- Tablets -->
+<tabletCatalogue xmlns="http://technocopia.byethost31.com/Catalogue"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://technocopia.byethost31.com/Catalogue ../xsd/Tablets.xsd">
+    <!-- Not supported by browsers
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+            href="Manufacturers.xml"
+            parse="xml"/>
+    -->
+    <manufacturerList>
+        <manufacturer id="asus">
+            <name>ASUS</name>
+            <website href="http://www.asus.com/"/>
+            <logo src="../logos/asus.png"/>
+        </manufacturer>
+        <manufacturer id="acer">
+            <name>Acer</name>
+            <website href="http://www.acer.com/"/>
+            <logo src="../logos/acer.png"/>
+        </manufacturer>
+        <manufacturer id="lenovo">
+            <name>Lenovo</name>
+            <website href="http://www.lenovo.com/"/>
+            <logo src="../logos/lenovo.png"/>
+        </manufacturer>
+        <manufacturer id="toshiba">
+            <name>Toshiba</name>
+            <website href="http://www.toshiba.com/"/>
+            <logo src="../logos/toshiba.png"/>
+        </manufacturer>
+        <manufacturer id="sony">
+            <name>Sony</name>
+            <website href="http://www.sony.com/"/>
+            <logo src="../logos/sony.png"/>
+        </manufacturer>
+    </manufacturerList>
+    <tabletList>
+        <tablet barcode="571935">
+            <img src="../pic/F2CAFD7597821ED28EDF7D7DB858963F.jpg"/>
+            <model>ASUS VIVO TAB RT TF600T+DOCK</model>
+            <manufacturer>asus</manufacturer>
+            <price currency="BGN">1357.55</price>
+            <warranty>24</warranty>
+            <cpu cores="4" maxFrequency="1.3">Cortex-A9</cpu>
+            <ram>2</ram>
+            <hdd type="internal">64</hdd>
+            <video>IPS LCD CAPACITIVE TOUCHSCREEN</video>
+            <os>Microsoft Windows RT</os>
+            <resolution>
+                <width>1366</width>
+                <height>768</height>
+            </resolution>
+            <display>
+                <in>10.1</in>
+                <cm>25.6</cm>
+            </display>
+            <weight>525</weight>
+            <dimensions>
+                <height>262.5</height>
+                <width>170.9</width>
+                <length>8.3</length>
+            </dimensions>
+            <battery>25Wh Li-polymer</battery>
+        </tablet>
+        <tablet barcode="517669">
+            <img src="../pic/F2CAFD7597821ED298AFF60FCDA41640.jpg"/>
+            <model>ACER ICONIA TAB W700P 64GB+KB</model>
+            <manufacturer>acer</manufacturer>
+            <price currency="BGN">1519.05</price>
+            <warranty>24</warranty>
+            <cpu cores="2" maxFrequency="1.4">I3-2365M</cpu>
+            <ram>4</ram>
+            <hdd type="internal">64</hdd>
+            <video>TFT LCD CAPACITIVE TOUCHSCREEN</video>
+            <os>Windows 8 Pro</os>
+            <resolution>
+                <width>1920</width>
+                <height>1080</height>
+            </resolution>
+            <display>
+                <in>11.6</in>
+                <cm>29.4</cm>
+            </display>
+            <weight>950</weight>
+            <dimensions>
+                <height>295</height>
+                <width>191</width>
+                <length>9.1</length>
+            </dimensions>
+            <battery>Li-Po 4850 mAh</battery>
+        </tablet>
+        <tablet barcode="518981">
+            <img src="../pic/F2CAFD7597821EE3819E29DE5C979640.jpg"/>
+            <model>LENOVO IDEAPAD MIIX 10.1</model>
+            <manufacturer>lenovo</manufacturer>
+            <price currency="BGN">901.55</price>
+            <warranty>24</warranty>
+            <cpu cores="2" maxFrequency="1.8">INTEL ATOM Z2760 DUAL</cpu>
+            <ram type="DDR2">2</ram>
+            <hdd type="internal">64</hdd>
+            <video>IPS CAPACITIVE TOUCHSCREEN</video>
+            <os>WINDOWS 8</os>
+            <resolution>
+                <width>1366</width>
+                <height>768</height>
+            </resolution>
+            <display>
+                <in>10.1</in>
+                <cm>25.7</cm>
+            </display>
+            <weight>580</weight>
+            <dimensions>
+                <height>265</height>
+                <width>173</width>
+                <length>9.9</length>
+            </dimensions>
+            <battery>Li-Polymer</battery>
+        </tablet>
+        <tablet barcode="512557">
+            <img src="../pic/22716E3BB7101EE2B9AF141C2B856E57.jpg"/>
+            <model>TOSHIBA EXCITE AT10-A-104 16GB WI-FI</model>
+            <manufacturer>toshiba</manufacturer>
+            <price currency="BGN">459.00</price>
+            <warranty>24</warranty>
+            <cpu cores="4" maxFrequency="1.3">Quad-core</cpu>
+            <ram>1</ram>
+            <hdd type="internal">16</hdd>
+            <video>WXGA CAPACITIVE TOUCHSCREEN</video>
+            <os>Android OS, v4.2</os>
+            <resolution>
+                <width>1280</width>
+                <height>800</height>
+            </resolution>
+            <display>
+                <in>10.1</in>
+                <cm>25.7</cm>
+            </display>
+            <weight>590</weight>
+            <dimensions>
+                <height>261</height>
+                <width>179</width>
+                <length>10.5</length>
+            </dimensions>
+            <battery>Li-Ion</battery>
+        </tablet>
+        <tablet barcode="573082">
+            <img src="../pic/F2CAFD7597821EE2B1F52469DA65B548.jpg"/>
+            <model>Таблет SONY XPERIA Z 3G 16GB SGP321E1</model>
+            <manufacturer>sony</manufacturer>
+            <price currency="BGN">1139.05</price>
+            <warranty>24</warranty>
+            <cpu cores="4" maxFrequency="1.5">Qualcomm</cpu>
+            <ram>2</ram>
+            <hdd type="internal">16</hdd>
+            <video>TFT LCD TOUCHSCREEN</video>
+            <os>Android OS, v4.1.2</os>
+            <resolution>
+                <width>1920</width>
+                <height>1200</height>
+            </resolution>
+            <display>
+                <in>10.1</in>
+                <cm>25.6</cm>
+            </display>
+            <weight>495</weight>
+            <dimensions>
+                <height>266</height>
+                <width>172.6</width>
+                <length>9</length>
+            </dimensions>
+            <battery>Li-Ion</battery>
+        </tablet>
+    </tabletList>
+</tabletCatalogue>

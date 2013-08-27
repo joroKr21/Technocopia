@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XMLSchema for base types -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:cat="http://technocopia.byethost31.com/Catalogue"
+        targetNamespace="http://technocopia.byethost31.com/Catalogue"
+        elementFormDefault="qualified"
+        version="1.0">
+    <!-- <include schemaLocation="iso3166CountryCode.xsd"/> -->
+    <include schemaLocation="iso4217CurrencyCode.xsd"/>
+    <annotation>
+        <documentation>Base types used by other schemas</documentation>
+    </annotation>
+    <simpleType name="decimal.1">
+        <restriction base="decimal">
+            <fractionDigits value="1"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="decimal.2">
+        <restriction base="decimal">
+            <fractionDigits value="2"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="decimal.3">
+        <restriction base="decimal">
+            <fractionDigits value="3"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="httpURL">
+        <restriction base="anyURI">
+            <!-- accept only http:// or https:// URIs -->
+            <pattern value="https?://.+"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="barcode">
+        <restriction base="string">
+            <pattern value="[0-9]+"/>
+        </restriction>
+    </simpleType>
+    <complexType name="DisplaySize">
+        <sequence>
+            <element name="in" type="cat:decimal.1"/>
+            <element name="cm" type="cat:decimal.1" minOccurs="0"/>
+        </sequence>
+    </complexType>
+    <complexType name="Resolution">
+        <sequence>
+            <element name="width" type="int"/>
+            <element name="height" type="int"/>
+        </sequence>
+    </complexType>
+    <complexType name="dimensions2D">
+        <sequence>
+            <element name="height" type="cat:decimal.1"/>
+            <element name="width" type="cat:decimal.1"/>
+        </sequence>
+    </complexType>
+    <complexType name="dimensions3D">
+        <complexContent>
+            <extension base="cat:dimensions2D">
+                <sequence>
+                    <element name="length" type="cat:decimal.1"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="Device">
+        <sequence>
+            <element name="img">
+                <complexType>
+                    <attribute name="src" type="anyURI" use="required"/>
+                </complexType>
+            </element>
+            <element name="model" type="string"/>
+            <element name="description" type="string" minOccurs="0"/>
+            <element name="manufacturer" type="IDREF"/>
+            <element name="price">
+                <complexType>
+                    <simpleContent>
+                        <extension base="cat:decimal.2">
+                            <attribute name="currency" type="cat:iso4217CurrencyCode" default="BGN"/>
+                        </extension>
+                    </simpleContent>
+                </complexType>
+            </element>
+            <element name="warranty" type="int" minOccurs="0"/>
+        </sequence>
+        <attribute name="barcode" type="cat:barcode" use="required"/>
+    </complexType>
+</schema>
+

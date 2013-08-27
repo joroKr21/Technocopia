@@ -1,0 +1,30 @@
+.datagrid {
+    border: 1px solid #7F7F7F;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #7F7F7F;
+}
+
+.datagrid table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datagrid td, .datagrid th {
+    padding: 3px 10px;
+    width: 50%;
+    border-left: 1px solid #7F7F7F;
+    font-size: 0.8em;
+}
+
+.datagrid tr:nth-child(even) {
+    background: #FAF0E6;
+}
+
+.datagrid td:first-child {
+    border-left: none;
+    font-weight: bold;
+}
+
+.datagrid tr:last-child td {
+    border-bottom: none;
+}

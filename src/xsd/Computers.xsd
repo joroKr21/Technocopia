@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XMLSchema for computers -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:cat="http://technocopia.byethost31.com/Catalogue"
+        targetNamespace="http://technocopia.byethost31.com/Catalogue"
+        elementFormDefault="qualified"
+        version="1.0">
+    <include schemaLocation="BaseTypes.xsd"/>
+    <annotation>
+        <documentation>Base type for computers</documentation>
+    </annotation>
+    <complexType name="Computer">
+        <complexContent>
+            <extension base="cat:Device">
+                <sequence>
+                    <element name="cpu">
+                        <complexType>
+                            <complexContent>
+                                <extension base="string">
+                                    <attribute name="cores" type="int" default="1"/>
+                                    <attribute name="maxFrequency" type="cat:decimal.2"/>
+                                </extension>
+                            </complexContent>
+                        </complexType>
+                    </element>
+                    <element name="ram">
+                        <complexType>
+                            <complexContent>
+                                <extension base="cat:decimal.1">
+                                    <attribute name="type" type="string" default="DDR3"/>
+                                </extension>
+                            </complexContent>
+                        </complexType>
+                    </element>
+                    <element name="hdd">
+                        <complexType>
+                            <complexContent>
+                                <extension base="cat:decimal.1">
+                                    <attribute name="type" type="string"/>
+                                </extension>
+                            </complexContent>
+                        </complexType>
+                    </element>
+                    <element name="video">
+                        <complexType>
+                            <complexContent>
+                                <extension base="string">
+                                    <attribute name="dedicatedMemory" type="cat:decimal.1"/>
+                                </extension>
+                            </complexContent>
+                        </complexType>
+                    </element>
+                    <element name="os" type="string" minOccurs="0"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+</schema>

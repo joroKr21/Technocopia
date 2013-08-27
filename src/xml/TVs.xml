@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/TVs.xsl"?>
+<!-- TVs -->
+<tvCatalogue xmlns="http://technocopia.byethost31.com/Catalogue"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://technocopia.byethost31.com/Catalogue ../xsd/TVs.xsd">
+    <!-- Not supported by browsers
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                href="Manufacturers.xml"
+                parse="xml"/>
+    -->
+    <manufacturerList>
+        <manufacturer id="samsung">
+            <name>Samsung</name>
+            <website href="http://www.samsung.com/"/>
+            <logo src="../logos/samsung.png"/>
+        </manufacturer>
+        <manufacturer id="sony">
+            <name>Sony</name>
+            <website href="http://www.sony.com/"/>
+            <logo src="../logos/sony.png"/>
+        </manufacturer>
+        <manufacturer id="panasonic">
+            <name>Panasonic</name>
+            <website href="http://www.panasonic.com/"/>
+            <logo src="../logos/panasonic.png"/>
+        </manufacturer>
+        <manufacturer id="philips">
+            <name>Philips</name>
+            <website href="http://www.philips.com/"/>
+            <logo src="../logos/philips.png"/>
+        </manufacturer>
+        <manufacturer id="lg">
+            <name>LG</name>
+            <website href="http://www.lg.com/"/>
+            <logo src="../logos/lg.png"/>
+        </manufacturer>
+    </manufacturerList>
+    <tvList>
+        <tv barcode="12065">
+            <img src="../pic/F2CAFD7597821EE2B6847F78C6A2F549.jpg"/>
+            <model>SAMSUNG UHD-85S9STXXH 3D LED</model>
+            <description>Observe an alternate reality.</description>
+            <manufacturer>samsung</manufacturer>
+            <price currency="BGN">66499.05</price>
+            <warranty>24</warranty>
+            <type>3D HyperReal Engine</type>
+            <resolution threeD="true">
+                <width>3840</width>
+                <height>2160</height>
+            </resolution>
+            <display>
+                <in>85</in>
+                <cm>216</cm>
+            </display>
+            <dimensions>
+                <height>162.4</height>
+                <width>200.4</width>
+                <length>58.2</length>
+            </dimensions>
+        </tv>
+        <tv barcode="13062">
+            <img src="../pic/F2CAFD7597821EE2B9AFA460E0EF5549.jpg"/>
+            <model>SONY KD65X9005ABAEP 3D LED</model>
+            <description>Submerge into the depths of a perfect illusion.</description>
+            <manufacturer>sony</manufacturer>
+            <price currency="BGN">13299.05</price>
+            <warranty>24</warranty>
+            <type>4K X-Reality PRO</type>
+            <resolution threeD="true">
+                <width>3840</width>
+                <height>2160</height>
+            </resolution>
+            <display>
+                <in>65</in>
+                <cm>164</cm>
+            </display>
+        </tv>
+        <tv barcode="14506">
+            <img src="../pic/22716E3BB7101EE2B69C84F2807CEE56.jpg"/>
+            <model>PANASONIC TX-P60ZT60E PLASMA</model>
+            <description>Impossible to distinguish from the real world.</description>
+            <manufacturer>panasonic</manufacturer>
+            <price currency="BGN">8549.05</price>
+            <warranty>24</warranty>
+            <type>FULL HD PLASMA</type>
+            <resolution threeD="true">
+                <width>1920</width>
+                <height>1080</height>
+            </resolution>
+            <display>
+                <in>60</in>
+                <cm>152.4</cm>
+            </display>
+            <dimensions>
+                <height>92.1</height>
+                <width>140.4</width>
+                <length>30.8</length>
+            </dimensions>
+        </tv>
+        <tv barcode="15314">
+            <img src="../pic/F2CAFD7597821EE2B9AFA5217B969549.jpg"/>
+            <model>PHILIPS 46PFL8007K 3D LED</model>
+            <description>An exquisite piece of technology for your viewing pleasure.</description>
+            <manufacturer>philips</manufacturer>
+            <price currency="BGN">2564.05</price>
+            <type>FULL HD LED</type>
+            <resolution threeD="true">
+                <width>1920</width>
+                <height>1080</height>
+            </resolution>
+            <display>
+                <in>46</in>
+                <cm>117</cm>
+            </display>
+        </tv>
+        <tv barcode="12340">
+            <img src="../pic/22716E3BB7101EE2B3BC6F0C2D4B8D38.jpg"/>
+            <model>LG 84LM960V 3D LED</model>
+            <description>Experience the cutting edge of rendering technology first-hand.</description>
+            <manufacturer>lg</manufacturer>
+            <price currency="BGN">23749.05</price>
+            <warranty>24</warranty>
+            <type>Edge LED</type>
+            <resolution threeD="true">
+                <width>3840</width>
+                <height>2160</height>
+            </resolution>
+            <display>
+                <in>84</in>
+                <cm>213</cm>
+            </display>
+        </tv>
+    </tvList>
+</tvCatalogue>

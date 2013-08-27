@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Manufacturers -->
+<manufacturerList xmlns="http://technocopia.byethost31.com/Catalogue"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://technocopia.byethost31.com/Catalogue ../xsd/Manufacturers.xsd">
+    <manufacturer id="samsung">
+        <name>Samsung</name>
+        <website href="http://www.samsung.com/"/>
+        <logo src="../logos/samsung.png"/>
+    </manufacturer>
+    <manufacturer id="sony">
+        <name>Sony</name>
+        <website href="http://www.sony.com/"/>
+        <logo src="../logos/sony.png"/>
+    </manufacturer>
+    <manufacturer id="panasonic">
+        <name>Panasonic</name>
+        <website href="http://www.panasonic.com/"/>
+        <logo src="../logos/panasonic.png"/>
+    </manufacturer>
+    <manufacturer id="philips">
+        <name>Philips</name>
+        <website href="http://www.philips.com/"/>
+        <logo src="../logos/philips.png"/>
+    </manufacturer>
+    <manufacturer id="lg">
+        <name>LG</name>
+        <website href="http://www.lg.com/"/>
+        <logo src="../logos/lg.png"/>
+    </manufacturer>
+    <manufacturer id="dell">
+        <name>Dell</name>
+        <website href="http://www.dell.com/"/>
+        <logo src="../logos/dell.png"/>
+    </manufacturer>
+    <manufacturer id="asus">
+        <name>ASUS</name>
+        <website href="http://www.asus.com/"/>
+        <logo src="../logos/asus.png"/>
+    </manufacturer>
+    <manufacturer id="acer">
+        <name>Acer</name>
+        <website href="http://www.acer.com/"/>
+        <logo src="../logos/acer.png"/>
+    </manufacturer>
+    <manufacturer id="hp">
+        <name>HP</name>
+        <website href="http://www.hp.com/"/>
+        <logo src="../logos/hp.png"/>
+    </manufacturer>
+    <manufacturer id="toshiba">
+        <name>Toshiba</name>
+        <website href="http://www.toshiba.com/"/>
+        <logo src="../logos/toshiba.png"/>
+    </manufacturer>
+    <manufacturer id="lenovo">
+        <name>Lenovo</name>
+        <website href="http://www.lenovo.com/"/>
+        <logo src="../logos/lenovo.png"/>
+    </manufacturer>
+    <manufacturer id="canon">
+        <name>Canon</name>
+        <website href="http://www.canon.com/"/>
+        <logo src="../logos/canon.png"/>
+    </manufacturer>
+    <manufacturer id="fujifilm">
+        <name>Fujifilm</name>
+        <website href="http://www.fujifilm.com/"/>
+        <logo src="../logos/fujifilm.png"/>
+    </manufacturer>
+    <manufacturer id="nikon">
+        <name>Nikon</name>
+        <website href="http://www.nikon.com/"/>
+        <logo src="../logos/nikon.png"/>
+    </manufacturer>
+    <manufacturer id="olympus">
+        <name>Olympus</name>
+        <website href="http://www.olympus.com/"/>
+        <logo src="../logos/olympus.png"/>
+    </manufacturer>
+</manufacturerList>

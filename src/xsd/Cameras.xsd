@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XMLSchema for cameras -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:cat="http://technocopia.byethost31.com/Catalogue"
+        targetNamespace="http://technocopia.byethost31.com/Catalogue"
+        elementFormDefault="qualified"
+        version="1.0">
+    <include schemaLocation="BaseTypes.xsd"/>
+    <include schemaLocation="Manufacturers.xsd"/>
+    <annotation>
+        <documentation>Cameras catalogue</documentation>
+    </annotation>
+    <complexType name="Camera">
+        <complexContent>
+            <extension base="cat:Device">
+                <sequence>
+                    <element name="resolution" type="cat:decimal.1"/>
+                    <element name="opticalZoom" type="cat:decimal.1" minOccurs="0"/>
+                    <element name="digitalZoom" type="cat:decimal.1" minOccurs="0"/>
+                    <element name="display" type="cat:decimal.1" minOccurs="0"/>
+                    <element name="battery" type="string" minOccurs="0"/>
+                    <element name="color" type="string"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="CameraList">
+        <sequence>
+            <element name="camera" type="cat:Camera" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    <element name="cameraCatalogue">
+        <complexType>
+            <sequence>
+                <element name="manufacturerList" type="cat:ManufacturerList"/>
+                <element name="cameraList" type="cat:CameraList"/>
+            </sequence>
+        </complexType>
+        <key name="manufacturerID">
+            <selector xpath="manufacturerList/manufacturer"/>
+            <field xpath="@id"/>
+        </key>
+        <keyref name="manufacturerRef" refer="cat:manufacturerID">
+            <selector xpath="cameraList/camera"/>
+            <field xpath="manufacturer"/>
+        </keyref>
+    </element>
+</schema>

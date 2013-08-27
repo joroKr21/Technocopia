@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/Notebooks.xsl"?>
+<!-- Notebooks -->
+<notebookCatalogue xmlns="http://technocopia.byethost31.com/Catalogue"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://technocopia.byethost31.com/Catalogue ../xsd/Notebooks.xsd">
+    <!-- Not supported by browsers
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                href="Manufacturers.xml"
+                parse="xml"/>
+    -->
+    <manufacturerList>
+        <manufacturer id="sony">
+            <name>Sony</name>
+            <website href="http://www.sony.com/"/>
+            <logo src="../logos/sony.png"/>
+        </manufacturer>
+        <manufacturer id="dell">
+            <name>Dell</name>
+            <website href="http://www.dell.com/"/>
+            <logo src="../logos/dell.png"/>
+        </manufacturer>
+        <manufacturer id="asus">
+            <name>ASUS</name>
+            <website href="http://www.asus.com/"/>
+            <logo src="../logos/asus.png"/>
+        </manufacturer>
+        <manufacturer id="acer">
+            <name>Acer</name>
+            <website href="http://www.acer.com/"/>
+            <logo src="../logos/acer.png"/>
+        </manufacturer>
+        <manufacturer id="hp">
+            <name>HP</name>
+            <website href="http://www.hp.com/"/>
+            <logo src="../logos/hp.png"/>
+        </manufacturer>
+    </manufacturerList>
+    <notebookList>
+        <notebook barcode="512719">
+            <img src="../pic/F2CAFD7597821ED28BCBAD6C2724963F.jpg"/>
+            <model>DELL INSPIRON 7520</model>
+            <manufacturer>dell</manufacturer>
+            <price currency="BGN">1709.05</price>
+            <warranty>24</warranty>
+            <cpu cores="4" maxFrequency="3.1">INTEL CORE i7-3612QM</cpu>
+            <ram type="DDR3">8</ram>
+            <hdd>1000</hdd>
+            <video dedicatedMemory="2">AMD RADEON HD 7730M</video>
+            <os>WINDOWS 8</os>
+            <resolution>
+                <width>1920</width>
+                <height>1080</height>
+            </resolution>
+            <display>
+                <in>15.6</in>
+                <cm>39.6</cm>
+            </display>
+            <weight>2.9</weight>
+            <battery>6-CELL LI-ION</battery>
+        </notebook>
+        <notebook barcode="511421">
+            <img src="../pic/22716E3BB7101ED2A396B0D30D759769.jpg"/>
+            <model>ASUS TAICHI21-CW005H</model>
+            <manufacturer>asus</manufacturer>
+            <price currency="BGN">2564.05</price>
+            <warranty>24</warranty>
+            <cpu cores="2" maxFrequency="2.6">INTEL CORE i5-3317U</cpu>
+            <ram type="DDR3/1600 MHz">4</ram>
+            <hdd type="SSD">128</hdd>
+            <video>INTEL HD GRAPHICS 4000</video>
+            <os>WINDOWS 8</os>
+            <resolution>
+                <width>1920</width>
+                <height>1080</height>
+            </resolution>
+            <display>
+                <in>11.6</in>
+                <cm>29.5</cm>
+            </display>
+            <weight>1.25</weight>
+            <battery>6-CELL LI-ION</battery>
+        </notebook>
+        <notebook barcode="519660">
+            <img src="../pic/F2CAFD7597821ED292A3C9049AA5D63F.jpg"/>
+            <model>HP ENVY 4-1103EA/C1X26EA</model>
+            <manufacturer>hp</manufacturer>
+            <price currency="BGN">1614.05</price>
+            <warranty>24</warranty>
+            <cpu cores="2" maxFrequency="2.6">INTEL CORE i5-3317U</cpu>
+            <ram type="DDR3">8</ram>
+            <hdd>500</hdd>
+            <video>INTEL HD GRAPHICS 4000</video>
+            <os>WINDOWS 8</os>
+            <resolution>
+                <width>1366</width>
+                <height>768</height>
+            </resolution>
+            <display>
+                <in>14</in>
+                <cm>35.6</cm>
+            </display>
+            <weight>2.17</weight>
+            <battery>4-CELL LI-ION</battery>
+        </notebook>
+        <notebook barcode="513177">
+            <img src="../pic/F2CAFD7597821EE380A057883E841549.jpg"/>
+            <model>SONY SVD1321L2EW</model>
+            <manufacturer>sony</manufacturer>
+            <price currency="BGN">2999.00</price>
+            <warranty>24</warranty>
+            <cpu cores="2" maxFrequency="2.6">INTEL CORE i5-4200U</cpu>
+            <ram type="DDR3">4</ram>
+            <hdd type="SSD">128</hdd>
+            <video>INTEL HD GRAPHICS 4400</video>
+            <os>WINDOWS 8</os>
+            <resolution>
+                <width>1920</width>
+                <height>1080</height>
+            </resolution>
+            <display>
+                <in>13.3</in>
+                <cm>33.8</cm>
+            </display>
+            <weight>1.343</weight>
+            <battery>LI-POLYMER</battery>
+        </notebook>
+        <notebook barcode="517805">
+            <img src="../pic/22716E3BB7101EE2B69D3A6B03BEEE56.jpg"/>
+            <model>ACER ASPIRE V3-571G-53238G1TMAII</model>
+            <manufacturer>acer</manufacturer>
+            <price currency="BGN">1186.55</price>
+            <warranty>24</warranty>
+            <cpu cores="2" maxFrequency="3.2">INTEL CORE i5-3230M</cpu>
+            <ram type="DDR3">8</ram>
+            <hdd>1000</hdd>
+            <video dedicatedMemory="4">NVIDIA GEFORCE GT 730M</video>
+            <resolution>
+                <width>1366</width>
+                <height>768</height>
+            </resolution>
+            <display>
+                <in>15.6</in>
+                <cm>39.6</cm>
+            </display>
+            <weight>2.6</weight>
+            <battery>6-CELL LI-ION</battery>
+        </notebook>
+    </notebookList>
+</notebookCatalogue>

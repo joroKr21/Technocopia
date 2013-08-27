@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XMLSchema for TVs -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:cat="http://technocopia.byethost31.com/Catalogue"
+        targetNamespace="http://technocopia.byethost31.com/Catalogue"
+        elementFormDefault="qualified"
+        version="1.0">
+    <include schemaLocation="BaseTypes.xsd"/>
+    <include schemaLocation="Manufacturers.xsd"/>
+    <annotation>
+        <documentation>TVs catalogue</documentation>
+    </annotation>
+    <complexType name="TV">
+        <complexContent>
+            <extension base="cat:Device">
+                <sequence>
+                    <element name="type" type="string"/>
+                    <element name="resolution">
+                        <complexType>
+                            <complexContent>
+                                <extension base="cat:Resolution">
+                                    <attribute name="threeD" type="boolean" default="false"/>
+                                </extension>
+                            </complexContent>
+                        </complexType>
+                    </element>
+                    <element name="display" type="cat:DisplaySize"/>
+                    <element name="dimensions" type="cat:dimensions3D" minOccurs="0"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="TVList">
+        <sequence>
+            <element name="tv" type="cat:TV" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    <element name="tvCatalogue">
+        <complexType>
+            <sequence>
+                <element name="manufacturerList" type="cat:ManufacturerList"/>
+                <element name="tvList" type="cat:TVList"/>
+            </sequence>
+        </complexType>
+        <key name="manufacturerID">
+            <selector xpath="manufacturerList/manufacturer"/>
+            <field xpath="@id"/>
+        </key>
+        <keyref name="manufacturerRef" refer="cat:manufacturerID">
+            <selector xpath="tvList/tv"/>
+            <field xpath="manufacturer"/>
+        </keyref>
+        <unique name="barcode">
+            <selector xpath="tvList/tv"/>
+            <field xpath="@barcode"/>
+        </unique>
+    </element>
+</schema>

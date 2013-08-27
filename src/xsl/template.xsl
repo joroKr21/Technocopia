@@ -34,7 +34,7 @@
                     <xsl:apply-templates/>
                     <footer>
                         Created by Georgi Krastev<br/>
-                        <a href="Technocopia.pdf" target="_blank">Documentation</a>
+                        <a href="../Technocopia.pdf" target="_blank">Documentation</a>
                     </footer>
                 </div>
             </body>
